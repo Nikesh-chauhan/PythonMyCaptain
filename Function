@@ -1,0 +1,15 @@
+import operator
+Word = input('Please enter a string ')
+def count_word(string):
+    count = dict()
+    for key in string:
+        if key not in count:
+            count[key] = 1
+        else:
+            count[key] += 1
+    sorted_ = dict( sorted(count.items(), key=operator.itemgetter(1),reverse=True))
+          
+    for word,number in sorted_.items():
+      print("{} = {} ".format(word,number),end=" ")
+    
+count_word(Word)
