@@ -1,0 +1,8 @@
+#1
+r=float(input("Input the radius of the circle : "))
+print("The area of the circle with radius",r,"is: ",(22/7)*r**2)
+
+#2
+file = input("Input the Filename: ")
+list_file = file.split(".")
+print ("The extension of the file is : " + list_file[-1])
